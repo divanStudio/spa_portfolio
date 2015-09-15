@@ -1,1 +1,172 @@
-<p>Divansoft</p>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#page-top">divanSoft</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#about">About</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container text-center">
+        <h1 class="header-title">divanSoft</h1>
+        <p class="header-desc">We make amazing flash games, web, desktop and mobile apps!</p>
+    </div>
+</header>
+
+<!-- Portfolio -->
+<section id="portfolio">
+    <div class="container">
+        <div class="page-header">
+            <h1>Portfolio</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 col-md-3 portfolio-item-container">
+                <a ui-sref="project({id: 'helicrane'})" class="thumbnail portfolio-item">
+                    <div class="portfolio-item-header text-center">
+                        <span class="glyphicon icon-game" aria-hidden="true"></span>
+                    </div>
+                    <div class="caption portfolio-item-content">
+                        <h3>HeliCrane</h3>
+                        <p>Flash game</p>                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4 col-md-3 portfolio-item-container">
+                <a ui-sref="project({id: 'helicrane2'})" class="thumbnail portfolio-item">
+                    <div class="portfolio-item-header text-center">
+                        <span class="glyphicon icon-game" aria-hidden="true"></span>
+                    </div>
+                    <div class="caption portfolio-item-content">
+                        <h3>HeliCrane 2</h3>
+                        <p>Flash game</p>                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4 col-md-3 portfolio-item-container">
+                <a ui-sref="project({id: 'ballistica'})" class="thumbnail portfolio-item">
+                    <div class="portfolio-item-header text-center">
+                        <span class="glyphicon icon-game" aria-hidden="true"></span>
+                    </div>
+                    <div class="caption portfolio-item-content">
+                        <h3>Ballistica</h3>
+                        <p>Flash game</p>                    
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-sm-4 col-md-3 portfolio-item-container">
+                <a ui-sref="project({id: 'vortexviewer'})" class="thumbnail portfolio-item">
+                    <div class="portfolio-item-header text-center">
+                        <span class="glyphicon icon-web" aria-hidden="true"></span>
+                    </div>
+                    <div class="caption portfolio-item-content">
+                        <h3>VortexViewer</h3>
+                        <p>Web app</p>                    
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-sm-4 col-md-3 portfolio-item-container">
+                <a ui-sref="project({id: 'helirunner'})" class="thumbnail portfolio-item">
+                    <div class="portfolio-item-header text-center">
+                        <span class="glyphicon icon-mobile" aria-hidden="true"></span>
+                    </div>
+                    <div class="caption portfolio-item-content">
+                        <h3>HeliRunner</h3>
+                        <p>Mobile game</p>                    
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <div class="container">
+        <div class="page-header">
+            <h1>About us</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <a ui-sref="dmytro" class="about-item text-center">
+                    <img class="img-circle about-item-img" src="/images/yeoman.png" alt="Dmytro Ovchar">
+                    <div>
+                        <h3 class="about-item-caption">Dmytro Ovchar</h3>
+                        <p class="about-item-desc">Developer</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-6">
+                <a ui-sref="ivan" class="about-item text-center">
+                    <img class="img-circle about-item-img" src="/images/yeoman.png" alt="Ivan Moskalenko">
+                    <div>
+                        <h3 class="about-item-caption">Ivan Moskalenko</h3>
+                        <p class="about-item-desc">Designer, Developer</p>                      
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+        <div class="page-header">
+            <h1>Contact</h1>            
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <dl class="dl-horizontal">
+                    <dt class="contact-name">Email</dt>
+                    <dd class="contact-item">ovchar.dmitriy@gmail.com</dd>
+                    <dd class="contact-item">ivan.moskalenko@gmail.com</dd>
+                </dl>
+            </div>
+            
+            <div class="col-md-6">
+                <dl class="dl-horizontal">
+                    <dt class="contact-name">Phone</dt>
+                    <dd class="contact-item">+380 66 335 0134</dd>
+                    <dd class="contact-item">+380 66 958 5580</dd>
+                </dl>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<div ng-include="'views/footer.html'"></div>
