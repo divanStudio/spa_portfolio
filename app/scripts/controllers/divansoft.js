@@ -9,6 +9,8 @@
  */
 
 angular.module("yoPortfolio")
-    .controller("DivansoftCtrl", function ($rootScope) {
-    $rootScope.pageTitle = "DivanSoft";
+    .controller("DivansoftCtrl", function ($rootScope, $scope, projects) {
+    $rootScope.pageTitle = "divanSoft";
+    
+    $scope.projects = projects.getProjectsByAuthor("divansoft");
 });

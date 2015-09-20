@@ -9,6 +9,8 @@
  */
 
 angular.module("yoPortfolio")
-    .controller("ProjectCtrl", function ($rootScope) {
-    $rootScope.pageTitle = "Project";
+    .controller("ProjectCtrl", function ($rootScope, $scope, $stateParams, projects) {
+    $scope.project = projects.getProjectByPath($stateParams.id);
+    
+    $rootScope.pageTitle = $scope.project.title;
 });

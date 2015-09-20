@@ -9,15 +9,17 @@ describe("Controller: ProjectCtrl", function () {
         scope;
 
     // Initialize the controller and a mock scope
-    beforeEach(inject(function ($controller, $rootScope) {
+    beforeEach(inject(function ($controller, $rootScope, $stateParams) {
         scope = $rootScope.$new();
+        $stateParams.id = "helicrane";
+        
         ProjectCtrl = $controller("ProjectCtrl", {
-            $scope: scope
-            // place here mocked dependencies
+            $scope: scope,
+            $stateParams: $stateParams
         });
     }));
 
     it("should attach a title of the page to the $rootScope", function () {
-        expect(scope.pageTitle).toBe("Project");
+        expect(scope.pageTitle).toBe("HeliCrane");
     });
 });
