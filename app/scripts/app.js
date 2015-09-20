@@ -43,4 +43,26 @@ angular
             });
         
         $urlRouterProvider.otherwise("/");
+    })
+    .run(function ($rootScope, $state, projects) {
+        $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) { 
+            if (toState.name === "project") {
+                
+                if (projects.getProjectByPath(toParams.id) === null) {
+                    // request to nonexistent project
+                    event.preventDefault();
+                    
+                    if (fromState.abstract) {
+                        $state.go("divansoft");
+                    } else {
+                        $state.go(fromState.name, fromParams);
+                    }                    
+                }
+                
+            }
+        });    
+    
+        $rootScope.$on('$stateChangeSuccess', function() { 
+            $(window).scrollTop(0);
+        }); 
     });

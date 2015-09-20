@@ -9,6 +9,8 @@
  */
 
 angular.module("yoPortfolio")
-    .controller("IvanCtrl", function ($rootScope) {
+    .controller("IvanCtrl", function ($rootScope, $scope, projects) {
     $rootScope.pageTitle = "Ivan Moskalenko";
+    
+    $scope.projects = projects.getProjectsByAuthor("ivan");
 });

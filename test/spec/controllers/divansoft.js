@@ -18,6 +18,6 @@ describe("Controller: DivansoftCtrl", function () {
     }));
 
     it("should attach a title of the page to the $rootScope", function () {
-        expect(scope.pageTitle).toBe("DivanSoft");
+        expect(scope.pageTitle).toBe("divanSoft");
     });
 });

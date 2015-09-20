@@ -411,6 +411,10 @@ footer span {
   background: #428e9c;
   color: #f9f9f9;
 }
+#promo .video {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 /* VERTICAL ALIGN 
 from http://www.minimit.com/demos/bootstrap-3-responsive-columns-of-same-height
 */
