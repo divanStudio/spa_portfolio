@@ -1,8 +1,14 @@
 @import "variables.less";
 @import "mixins.less";
 
+html {
+    position: relative;
+    min-height: 100%;
+}
 
 body {
+    margin-bottom: @nav-height-small;
+
     @media(min-width: 768px) {
         font-size: 16px;
     }
@@ -379,6 +385,10 @@ header {
 
 /* FOOTER */
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
     background: @footer-background-color;
     color: @footer-color;
     height: @nav-height-small;
@@ -467,7 +477,7 @@ footer {
 #promo {
     background: @promo-background-color;
     color: @promo-color;
-    
+
     .video {
         margin-top: 10px;
         margin-bottom: 10px;
