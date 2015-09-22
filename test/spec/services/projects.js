@@ -13,8 +13,8 @@ describe("Service: projects", function () {
     }));
     
 
-    it("should return 5 project objects for author 'divansoft'", function () {
-        expect(projects.getProjectsByAuthor("divansoft").length).toBe(5);
+    it("should return 5 project objects for author 'divanStudio'", function () {
+        expect(projects.getProjectsByAuthor("divanStudio").length).toBe(5);
     });
     
     it("should return 4 project objects for author 'dmytro'", function () {

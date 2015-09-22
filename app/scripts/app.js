@@ -21,10 +21,10 @@ angular
     ])
     .config(function ($stateProvider, $urlRouterProvider) {    
         $stateProvider
-            .state("divansoft", {
+            .state("divanstudio", {
                 url: "/",
-                controller: "DivansoftCtrl",
-                templateUrl: "views/divansoft.html"
+                controller: "DivanStudioCtrl",
+                templateUrl: "views/divanstudio.html"
             })
             .state("dmytro", {
                 url: "/dmytro",

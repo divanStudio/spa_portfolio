@@ -345,7 +345,8 @@ footer {
   color: #f9f9f9;
   height: 50px;
   font-size: 1.0em;
-  line-height: 50px;
+  /* to avoid scrollbars showing */
+  line-height: 49px;
 }
 footer span {
   vertical-align: middle;

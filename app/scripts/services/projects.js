@@ -18,7 +18,7 @@ angular.module("yoPortfolio")
             path: "helicrane",
             view: "helicrane.html",
             iconClass: "icon-game",
-            authors: ["divansoft", "dmytro", "ivan"]
+            authors: ["divanStudio", "dmytro", "ivan"]
         },
         {
             id: 1,
@@ -27,7 +27,7 @@ angular.module("yoPortfolio")
             path: "helibomber",
             view: "helibomber.html",
             iconClass: "icon-game",
-            authors: ["divansoft", "dmytro", "ivan"]
+            authors: ["divanStudio", "dmytro", "ivan"]
         },
         {
             id: 2,
@@ -36,7 +36,7 @@ angular.module("yoPortfolio")
             path: "ballistica",
             view: "ballistica.html",
             iconClass: "icon-game",
-            authors: ["divansoft", "dmytro", "ivan"]
+            authors: ["divanStudio", "dmytro", "ivan"]
         },
         {
             id: 3,
@@ -45,7 +45,7 @@ angular.module("yoPortfolio")
             path: "vortexviewer",
             view: "vortexviewer.html",
             iconClass: "icon-web",
-            authors: ["divansoft", "dmytro"]
+            authors: ["divanStudio", "dmytro"]
         },
         {
             id: 4,
@@ -54,7 +54,7 @@ angular.module("yoPortfolio")
             path: "helirunner",
             view: "helirunner.html",
             iconClass: "icon-mobile",
-            authors: ["divansoft", "ivan"]
+            authors: ["divanStudio", "ivan"]
         }
 
     ];
