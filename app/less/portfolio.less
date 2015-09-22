@@ -387,18 +387,14 @@ header {
 footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
-    
+    width: 100%;    
     background: @footer-background-color;
     color: @footer-color;
     height: @nav-height-small;
     font-size: 1.0em;
-    
-    /* to avoid scrollbars showing */
-    line-height: @nav-height-small - 1;
 
-    span {
-        vertical-align: middle;
+    .container {
+        margin-top: @nav-height-small * 0.3;
     }
 }
 

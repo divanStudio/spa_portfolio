@@ -1,12 +1,5 @@
 "use strict";
 
-
-// prevent default behaviour of links in navbar
-$("body").on("click", ".navbar a[href^=#]", function() {
-    return false;
-});
-
-
 /**
  * @ngdoc overview
  * @name yoPortfolio

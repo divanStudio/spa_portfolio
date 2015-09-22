@@ -345,11 +345,9 @@ footer {
   color: #f9f9f9;
   height: 50px;
   font-size: 1.0em;
-  /* to avoid scrollbars showing */
-  line-height: 49px;
 }
-footer span {
-  vertical-align: middle;
+footer .container {
+  margin-top: 15px;
 }
 /* ICONS */
 [class^="icon-"]:before,
