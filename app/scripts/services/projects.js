@@ -55,6 +55,15 @@ angular.module("yoPortfolio")
             view: "helirunner.html",
             iconClass: "icon-mobile",
             authors: ["divanStudio", "ivan"]
+        },
+        {
+            id: 5,
+            title: "GAZ-13",
+            type: "3D model",
+            path: "gaz13",
+            view: "gaz13.html",
+            iconClass: "icon-design",
+            authors: ["divanStudio", "ivan"]
         }
 
     ];

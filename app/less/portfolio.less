@@ -8,6 +8,7 @@ html {
 
 body {
     margin-bottom: @nav-height-small;
+    background: @gray-light;
 
     @media(min-width: 768px) {
         font-size: 16px;
@@ -417,6 +418,10 @@ footer {
     content: "\e004";
 }
 
+.icon-design:before {
+    content: "\e006";
+}
+
 /* Images */
 #images {
     background: @header-background-color;    
@@ -443,7 +448,9 @@ footer {
 #description {
     background: @description-background-color;
     color: @description-color;
-    p {
+    
+    p,
+    li {
         font-size: 1.25em;
     }
 

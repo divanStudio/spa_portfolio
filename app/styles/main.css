@@ -22,6 +22,7 @@ html {
 }
 body {
   margin-bottom: 50px;
+  background: #ece8e9;
 }
 @media (min-width: 768px) {
   body {
@@ -366,6 +367,9 @@ footer .container {
 .icon-mobile:before {
   content: "\e004";
 }
+.icon-design:before {
+  content: "\e006";
+}
 /* Images */
 #images {
   background: #41494c;
@@ -390,7 +394,8 @@ footer .container {
   background: #ece8e9;
   color: #41494c;
 }
-#description p {
+#description p,
+#description li {
   font-size: 1.25em;
 }
 #description a {
