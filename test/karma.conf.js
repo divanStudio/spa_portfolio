@@ -30,6 +30,7 @@ module.exports = function(config) {
             'bower_components/angular-mocks/angular-mocks.js',
             // endbower
             "app/scripts/**/*.js",
+            "app/views/*.html",
             "test/mock/**/*.js",
             "test/spec/**/*.js"
         ],
@@ -53,10 +54,20 @@ module.exports = function(config) {
             "PhantomJS"
         ],
 
+        preprocessors: {
+            "app/views/*.html": "ng-html2js" // Preprocessor
+        },
+
+        ngHtml2JsPreprocessor: {
+            stripPrefix: "app/",
+            moduleName: "templates"
+        },
+
         // Which plugins to enable
         plugins: [
             "karma-phantomjs-launcher",
-            "karma-jasmine"
+            "karma-jasmine",
+            "karma-ng-html2js-preprocessor",
         ],
 
         // Continuous Integration mode
