@@ -39,30 +39,7 @@
 </header>
 
 <!-- Portfolio -->
-<section id="portfolio">
-    <div class="container">
-        <div class="page-header">
-            <h1>Portfolio</h1>
-        </div>
-
-        
-        <div class="row">
-            
-            <div ng-repeat="project in projects" class="col-sm-4 col-md-3 portfolio-item-container">
-                <a ui-sref="project({id: project.path})" class="thumbnail portfolio-item">
-                    <div class="portfolio-item-header text-center">
-                        <span class="glyphicon" ng-class="project.iconClass" aria-hidden="true"></span>
-                    </div>
-                    <div class="caption portfolio-item-content">
-                        <h3>{{ project.title }}</h3>
-                        <p>{{ project.type }}</p>                        
-                    </div>
-                </a>
-            </div>
-                        
-        </div>
-    </div>
-</section>
+<section class="portfolio" data-projects="projects"></section>
 
 <!-- About -->
 <section id="about">
@@ -74,7 +51,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-6">
                 <a ui-sref="dmytro" class="about-item text-center">
-                    <img class="img-circle about-item-img" src="/images/yeoman.png" alt="Dmytro Ovchar">
+                    <img class="img-circle about-item-img" src="/images/dmytro.png" alt="Dmytro Ovchar">
                     <div>
                         <h3 class="about-item-caption">Dmytro Ovchar</h3>
                         <p class="about-item-desc">Developer</p>
@@ -84,7 +61,7 @@
 
             <div class="col-sm-6 col-md-6">
                 <a ui-sref="ivan" class="about-item text-center">
-                    <img class="img-circle about-item-img" src="/images/yeoman.png" alt="Ivan Moskalenko">
+                    <img class="img-circle about-item-img" src="/images/ivan.jpg" alt="Ivan Moskalenko">
                     <div>
                         <h3 class="about-item-caption">Ivan Moskalenko</h3>
                         <p class="about-item-desc">Designer, Developer</p>                      
@@ -110,7 +87,7 @@
                     <dd class="contact-item">ivan.moskalenko@gmail.com</dd>
                 </dl>
             </div>
-            
+
             <div class="col-md-6">
                 <dl class="dl-horizontal">
                     <dt class="contact-name">Phone</dt>

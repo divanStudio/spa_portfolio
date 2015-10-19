@@ -222,7 +222,7 @@ module.exports = function (grunt) {
                     '<%= yeoman.dist %>/scripts/{,*/}*.js',
                     '<%= yeoman.dist %>/styles/{,*/}*.css',
                     '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-                    '<%= yeoman.dist %>/styles/fonts/*'
+                    '<%= yeoman.dist %>/styles/fonts/{,*/}*'
                 ]
             }
         },
@@ -373,8 +373,7 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt}',
                         '.htaccess',
                         '*.html',
-                        'images/{,*/}*.{webp}',
-                        'styles/fonts/{,*/}*.*'
+                        'images/{,*/}*.{webp}'
                     ]
                 }, {
                     expand: true,
@@ -389,7 +388,7 @@ module.exports = function (grunt) {
                 }, {
                     expand: true,
                     cwd: '<%= yeoman.app %>',
-                    src: 'fonts/*',
+                    src: 'fonts/**/*',
                     dest: '<%= yeoman.dist %>'
                 }]
             },
@@ -403,7 +402,7 @@ module.exports = function (grunt) {
 
         // Compile less
         less: {
-            development: {
+            dist: {
                 files: {
                     '<%= yeoman.app %>/styles/main.css': '<%= yeoman.app %>/less/portfolio.less'
                 }

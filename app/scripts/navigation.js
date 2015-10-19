@@ -8,7 +8,7 @@
     $("body").on("click", ".navbar a[href^=#]", function(e) {
         var navbarHeight = $(".navbar").outerHeight(),
             href = $(this).attr("href"),
-            $body = $("body"),
+            $body = $("html, body"),
             $navbarToggle = $(".navbar-toggle"),
             $target = $(href),
             scrollTopValue = 0;
@@ -21,10 +21,10 @@
 
         $body.stop().animate({ scrollTop: scrollTopValue }, 600);
         
-        // collapse navbar aria
+        // collapse navbar aria        
         if ($navbarToggle.attr("aria-expanded") === "true") {
-            $navbarToggle.click();
-        }
+            $navbarToggle.trigger('click.bs.collapse.data-api');
+        }        
     });
     
 })(jQuery);

@@ -22,7 +22,7 @@ angular.module("yoPortfolio")
         },
         {
             id: 1,
-            title: "HeliCrane2",
+            title: "HeliCrane 2: Bomber",
             type: "Flash game",
             path: "helibomber",
             view: "helibomber.html",
