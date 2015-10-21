@@ -438,6 +438,16 @@ module.exports = function (grunt) {
             ]
         },
 
+        'gh-pages': {
+            options: {
+                base: 'dist',
+                branch: 'master',
+                clone: '.tmp/grunt-gh-pages/gh-pages/repo',
+                repo: 'https://github.com/divanStudio/divanstudio.github.io.git'
+            },
+            src: '**/*'
+        },
+
         // Test settings
         karma: {
             unit: {
@@ -505,5 +515,10 @@ module.exports = function (grunt) {
         'newer:jshint',
         'test',
         'build'
+    ]);
+
+    grunt.registerTask('deploy', [
+        'build',
+        'gh-pages'
     ]);
 };
