@@ -14,7 +14,7 @@ describe("Service: projects", function () {
     
 
     it("should return 5 project objects for author 'divanStudio'", function () {
-        expect(projects.getProjectsByAuthor("divanStudio").length).toBe(5);
+        expect(projects.getProjectsByAuthor("divanStudio").length).toBe(6);
     });
     
     it("should return 4 project objects for author 'dmytro'", function () {
@@ -22,7 +22,7 @@ describe("Service: projects", function () {
     });
     
     it("should return 4 project objects for author 'ivan'", function () {
-        expect(projects.getProjectsByAuthor("ivan").length).toBe(4);
+        expect(projects.getProjectsByAuthor("ivan").length).toBe(5);
     });
     
     it("should return one object for path 'helicrane'", function () {

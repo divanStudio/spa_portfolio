@@ -39,29 +39,7 @@
 </header>
 
 <!-- Portfolio -->
-<section id="portfolio">
-    <div class="container">
-        <div class="page-header">
-            <h1>Portfolio</h1>
-        </div>
-
-        <div class="row">
-            
-            <div ng-repeat="project in projects" class="col-sm-4 col-md-3 portfolio-item-container">
-                <a ui-sref="project({id: project.path})" class="thumbnail portfolio-item">
-                    <div class="portfolio-item-header text-center">
-                        <span class="glyphicon" ng-class="project.iconClass" aria-hidden="true"></span>
-                    </div>
-                    <div class="caption portfolio-item-content">
-                        <h3>{{ project.title }}</h3>
-                        <p>{{ project.type }}</p>                        
-                    </div>
-                </a>
-            </div>
-
-        </div>
-    </div>
-</section>
+<section class="portfolio" data-projects="projects"></section>
 
 <!-- Skills -->
 <section id="skills">
@@ -73,14 +51,18 @@
         <div class="row">
             <div class="col-md-12">
                 <dl class="dl-horizontal skill-item">
-                    <dt class="skill-item-caption">JavaScript</dt>
-                    <dd class="skill-item-desc">AngularJS, jQuery, jQuery UI, Underscore.js, Backbone.js, Three.js, QUnit, Sinon.js</dd>
 
-                    <dt class="skill-item-caption">HTML5, CSS3</dt>
-                    <dd class="skill-item-desc">Canvas API, WebGL, Less</dd>
+                    <dt class="skill-item-caption">Java</dt>
+                    <dd class="skill-item-desc">Android, LibGdx, Box2d, Java Universal Tween Engine, AndroidStudio, NetBeans, Eclipse</dd>
+                    
+                    <dt class="skill-item-caption">ActionScript 2.0-3.0</dt>
+                    <dd class="skill-item-desc">Adobe Flash, FlashDevelop, Box2D, Greensock TweenLite</dd>
+                    
+                    <dt class="skill-item-caption">Databases</dt>
+                    <dd class="skill-item-desc">MySQL</dd>
 
-                    <dt class="skill-item-caption">PHP</dt>
-                    <dd class="skill-item-desc">Yii2, CodeIgniter2, PHPUnit, Codeception</dd>
+                    <dt class="skill-item-caption">CAD/CAE/Design</dt>
+                    <dd class="skill-item-desc">SolidWorks, NX, ANSYS, MSC SoftWare Patran/Nastran</dd>
 
                 </dl>
             </div>

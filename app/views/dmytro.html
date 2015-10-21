@@ -39,29 +39,7 @@
 </header>
 
 <!-- Portfolio -->
-<section id="portfolio">
-    <div class="container">
-        <div class="page-header">
-            <h1>Portfolio</h1>
-        </div>
-
-        <div class="row">
-            
-            <div ng-repeat="project in projects" class="col-sm-4 col-md-3 portfolio-item-container">
-                <a ui-sref="project({id: project.path})" class="thumbnail portfolio-item">
-                    <div class="portfolio-item-header text-center">
-                        <span class="glyphicon" ng-class="project.iconClass" aria-hidden="true"></span>
-                    </div>
-                    <div class="caption portfolio-item-content">
-                        <h3>{{ project.title }}</h3>
-                        <p>{{ project.type }}</p>                        
-                    </div>
-                </a>
-                
-            </div>
-        </div>
-    </div>
-</section>
+<section class="portfolio" data-projects="projects"></section>
 
 <!-- Skills -->
 <section id="skills">
@@ -74,15 +52,27 @@
             <div class="col-md-12">
                 <dl class="dl-horizontal skill-item">
                     <dt class="skill-item-caption">JavaScript</dt>
-                    <dd class="skill-item-desc">AngularJS, jQuery, jQuery UI, Underscore.js, Backbone.js, Three.js, QUnit, Sinon.js</dd>
+                    <dd class="skill-item-desc">jQuery, jQuery UI, Backbone.js, AngularJS, Three.js, QUnit+Sinon.js, Jasmine</dd>
 
                     <dt class="skill-item-caption">HTML5, CSS3</dt>
-                    <dd class="skill-item-desc">Canvas API, WebGL, Less</dd>
+                    <dd class="skill-item-desc">Canvas API, WebGL, Bootstrap, Less</dd>
 
                     <dt class="skill-item-caption">PHP</dt>
-                    <dd class="skill-item-desc">Yii2, CodeIgniter2, PHPUnit, Codeception</dd>
-
+                    <dd class="skill-item-desc">Yii2, Laravel 5, PHPUnit</dd>
+                    
+                    <dt class="skill-item-caption">Databases</dt>
+                    <dd class="skill-item-desc">MySQL, MongoDB</dd>
+                    
+                    <dt class="skill-item-caption">ActionScript 3</dt>
+                    <dd class="skill-item-desc">Adobe Flash, FlashDevelop, Box2D, Greensock TweenLite</dd>
+                    
+                    <dt class="skill-item-caption">C++</dt>
+                    <dd class="skill-item-desc">Qt, Eigen, OLE</dd>
+                    
+                    <dt class="skill-item-caption">Tools</dt>
+                    <dd class="skill-item-desc">Git, Grunt, Photoshop</dd>
                 </dl>
+
             </div>
         </div>
     </div>

@@ -1,0 +1,26 @@
+<section id="portfolio">
+    <div class="container">
+        <div class="page-header">
+            <h1>Portfolio</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-lg-10 col-lg-offset-1">
+                <div class="row">
+                    <div ng-repeat="project in projects" class="col-xs-12 col-sm-4 col-md-3 col-lg-3 portfolio-item-container">
+                        <a ui-sref="project({id: project.path})" class="portfolio-item">
+                            <div class="portfolio-item-header text-center">
+                                <div class="portfolio-item-icon" ng-class="project.iconClass"></div>
+                                <p class="portfolio-item-type">{{ project.type }}</p>
+                            </div>
+                            <div class="portfolio-item-content">
+                                <h3>{{ project.title }}</h3>                                                
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

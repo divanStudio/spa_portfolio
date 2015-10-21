@@ -22,7 +22,7 @@ angular.module("yoPortfolio")
         },
         {
             id: 1,
-            title: "HeliCrane2",
+            title: "HeliCrane 2: Bomber",
             type: "Flash game",
             path: "helibomber",
             view: "helibomber.html",
@@ -54,6 +54,15 @@ angular.module("yoPortfolio")
             path: "helirunner",
             view: "helirunner.html",
             iconClass: "icon-mobile",
+            authors: ["divanStudio", "ivan"]
+        },
+        {
+            id: 5,
+            title: "GAZ-13",
+            type: "3D model",
+            path: "gaz13",
+            view: "gaz13.html",
+            iconClass: "icon-design",
             authors: ["divanStudio", "ivan"]
         }
 
