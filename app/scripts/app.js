@@ -32,7 +32,9 @@ angular
             .state("project", {
                 url: "/p/:id",
                 controller: "ProjectCtrl",
-                templateUrl: "views/project.html"
+                templateUrl: function ($stateParams){
+                    return 'views/' + $stateParams.id + '.html';
+                }
             });
         
         $urlRouterProvider.otherwise("/");
@@ -57,5 +59,6 @@ angular
     
         $rootScope.$on('$stateChangeSuccess', function() { 
             $(window).scrollTop(0);
-        }); 
+        });  
+ 
     });
